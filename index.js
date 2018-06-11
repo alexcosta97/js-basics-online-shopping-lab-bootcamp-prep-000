@@ -52,7 +52,7 @@ function total() {
 }
 
 function removeFromCart(item) {
-  var index = undefined;
+  var index = -1;
   for(var i = 0; i < cart.length; i++)
   {
     if(cart[i].itemName === name)
@@ -60,7 +60,7 @@ function removeFromCart(item) {
       index = i;
     }
   }
-  if(index === undefined)
+  if(index === -1)
   {
     return 'That item is not in your cart.';
   }
