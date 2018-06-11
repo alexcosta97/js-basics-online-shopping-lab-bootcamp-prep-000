@@ -55,7 +55,7 @@ function removeFromCart(item) {
   var index = -1;
   for(var i = 0; i < cart.length; i++)
   {
-    if(cart[i].itemName === name)
+    if(cart[i].itemName === item)
     {
       index = i;
     }
